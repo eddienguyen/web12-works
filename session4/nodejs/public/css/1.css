@@ -1,0 +1,75 @@
+*{margin:0;padding:0;}
+
+p{
+    color:#BFC0C4;
+    font-style: italic;
+}
+/* Navigation menu */
+nav.nav-menu{
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+    height: 30px;
+    background: black;
+}
+nav.nav-menu span{
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    color:#BFC0C4;
+}
+
+nav.sub-menu span{
+    display: block;
+    width: 100px;
+    height: auto;
+    background:#122036;
+    text-align: left;
+    padding-left:10px;
+}
+
+nav.nav-menu span:hover{
+    color: azure;
+}
+
+nav.nav-menu span:hover > nav.sub-menu{
+    display: block;
+}
+
+nav.sub-menu{
+    display: none;
+    position: absolute;
+}
+
+/* end Navigation menu */
+
+header{
+    background:url('../img/SPACE.jpg');
+}
+.heading{
+    margin: 20px 40px;
+    padding: 100px;
+    font-size: 100px;
+    color:#042f74;
+}
+
+.heading h1:first-child{
+    color:#ffffff;
+}
+
+#book-form{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-main{
+    width: 500px;
+    height: 100px;
+    text-align: left;
+    border-spacing: 2px;
+    color:white;
+}
