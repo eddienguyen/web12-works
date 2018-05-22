@@ -45,8 +45,6 @@ app.post('/api/questions', (req, res)=>{
         if(err) console.log(err)
         else res.redirect(`/question/${questionCreated._id}`);
     })
-
-    
 });
 
 //get a request for a question to answer

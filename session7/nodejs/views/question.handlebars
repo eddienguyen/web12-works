@@ -1,0 +1,41 @@
+<div class="container question-handlebars text-center">
+    {{#if question}}
+        <h1 class="text-center">{{question.content}}</h1>
+        <h3>{{totalVote}} votes</h3> 
+        <div class="row">
+                <div id="question-result" class="text-center col-12">
+                    <div id="result-bar" class="text-center">
+                        <div id="vote-yes" style="width: 50%">
+                            <span id="percent-yes">{{question.yes}}</span>
+                            <i class="far fa-thumbs-up"></i>
+                        </div>
+                        <div id="vote-no" style="width: 50%">  
+                            <span id="percent-no">{{question.no}}</span>
+                            <i class="far fa-thumbs-down"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <a href="/">
+            <button class="btn btn-success btn-lg">Câu hỏi khác</button>
+        </a>
+    {{else}}
+        <div class="text-center">WTF? no question?</div>
+    {{/if}}
+</div>
+
+<script>
+    let percentYes = Math.round( (({{question.yes}} / {{totalVote}}) * 100 ) *100) / 100;
+    let percentNo = Math.round ( (({{question.no}} / {{totalVote}}) *100) * 100) / 100;
+    
+    //when there's no vote, Math.round(0/0) returns NaN
+    if(isNaN(percentYes)) percentYes = 50;
+    if(isNaN(percentNo)) percentNo = 50;
+
+    //set width for div
+    document.getElementById('vote-yes').style.width = `${percentYes}%`;
+    document.getElementById('vote-no').style.width = `${percentNo}%`;
+    //show caculated percentage
+    document.getElementById('percent-yes').innerHTML = `${percentYes}%`;
+    document.getElementById('percent-no').innerHTML = `${percentNo}%`;
+</script>

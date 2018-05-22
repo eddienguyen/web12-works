@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Hãy hỏi cộng đồng một câu hỏi đúng/sai hoặc có/không</h1>
+
+            <form action="/api/submit-question" method="POST" >
+                <div class="form-group">
+                    <textarea name="question" id="input-textarea" rows="6" class="form-control" maxlength="200"></textarea>
+                    <p class="text-muted" id="counter">Còn 200/200 ký tự</p>
+                    <button type="submit" class="btn btn-primary">Gửi</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    let textArea = document.getElementById('input-textarea');
+    let characters = textArea.getAttribute('maxlength');
+    textArea.addEventListener('input', function(){
+        let charactersTyped = textArea.value.length;
+        document.getElementById('counter').innerHTML = `Còn ${characters - charactersTyped}/${characters} ký tự`;
+    })
+</script>
