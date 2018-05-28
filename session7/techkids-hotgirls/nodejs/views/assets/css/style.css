@@ -217,37 +217,7 @@ body{
     padding-bottom: 10px;
 }
 
-    /* section MODAL */
-/* The Modal (background) */
-.modal{
-    display: none;  
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 20%;
-    height: 20%;
-    margin: 15% auto;
-    overflow: auto; /*enable scroll if needed*/
-    background: #000;
-}
 
-/* Modal Content box */
-.modal-content{
-    background: #fefefe;
-    /* margin: 15% auto;   15% on the top and centered */
-    padding: 20px;
-    border: 1px solid #8a8a8a;
-    width: 80%; /*depending on screen size*/
-}
-/* The close button */
-.close{
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-    /* end section MODAL */
 
     /* floating buttons */
 a.floating-button{
@@ -275,9 +245,7 @@ a.social-button{
 a.top-button{
     right: 130px;
 }
-.side-floating-buttons i:hover .hidden-message{
-    
-}
+
 
 .hidden-message{
     height: 120px;
