@@ -1,0 +1,48 @@
+<div class="row">
+    {{#each girls}}
+    <div class="col-3">
+        <div class="post">
+            <div class="img-wrapper">
+                <div class="girl-img-overlay">
+                    <a href="#">
+                        <button class="more-info">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </a>
+                    <div class="row text-center short-description">
+                        <div class="col-4 views">
+                            <i class="fas fa-eye"></i>
+                            <h6>{{view}}</h6>
+                        </div>
+                        <div class="col-4 birthdate">
+                            <i class="far fa-clock"></i>
+                            <h6>{{birthday}}</h6>
+                        </div>
+                        <div class="col-4 likes">
+                            <i class="fas fa-plus"></i>
+                            <h6>{{like}}</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="girl-img">
+                    <img src="{{imageUrl}}" alt="" class="cover">
+                </div>
+            </div>
+            <div class="girl-info">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="fakeImg"></div>
+                    </div>
+                    <div class="col-8 text-left">
+                        <h5 class="name">{{name}}</h5>
+                        <p class="sub-title">{{title}}</p>
+                    </div>
+                </div>
+                <p class="description">
+                    {{description}}
+                </p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

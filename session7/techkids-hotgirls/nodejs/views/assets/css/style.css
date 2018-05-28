@@ -110,19 +110,19 @@ body{
 /* End Main navigation bar */
 
 /* section MAIN-CONTENT */
-.main-content .girl-posts{
+.girl-posts{
     padding: 10px 0;
 }
-.main-content .girl-posts .row:first-child{
+.girl-posts .row:first-child{
     padding-left: 5px;
 }
-.main-content .girl-posts .row:last-child{
+.girl-posts .row:last-child{
     padding-right: 5px;
 }
-.main-content .girl-posts .row .col-3{
+.girl-posts .row .col-3{
     padding: 10px ;
 }
-.main-content .post{
+ .post{
     background: #fff;
 }
 .post .girl-info .row{
@@ -130,18 +130,18 @@ body{
     height: 42px;
 }
 
-.main-content .post .img-wrapper{
+.post .img-wrapper{
     position: relative;
 }
-.main-content .img-wrapper .girl-img img{
+.img-wrapper .girl-img img{
     width: 100%;
     transition: all 0.15s ease-in   ;
 }
 
-.main-content .post .girl-info .col-4{
+.post .girl-info .col-4{
     text-align: center; 
 }
-.main-content .post .girl-info .fakeImg{
+.post .girl-info .fakeImg{
     background: #464646;
     border-radius: 50%;
     width: 42px;

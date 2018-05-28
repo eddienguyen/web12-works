@@ -15,6 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
 </head>
 <body>
@@ -38,7 +39,7 @@
                 </div>
                 <div class="nav navbar-nav flex-fill w-100 justify-content-end">
                     <div class="profile-btn-group">
-                        <button class="btn-imgupload ">
+                        <button class="btn-imgupload">
                             <i class="fas fa-camera"></i>
                         </button>
                         <button class="btn-bars">
@@ -58,7 +59,7 @@
                     <div class="post">
                         <div class="img-wrapper">
                             <div class="girl-img-overlay">
-                                <button class="more-info">
+                                <button class="more-info"  id="open-modal">
                                     <i class="fas fa-plus"></i>
                                 </button>
                                 <div class="row text-center short-description">
@@ -70,7 +71,7 @@
                                         <i class="far fa-clock"></i>
                                         <h6>07/05/12</h6>
                                     </div>
-                                    <div class="col-4 followers">
+                                    <div class="col-4 likes">
                                         <i class="fas fa-plus"></i>
                                         <h6>588</h6>
                                     </div>
@@ -110,14 +111,14 @@
                                         <i class="far fa-clock"></i>
                                         <h6>07/05/12</h6>
                                     </div>
-                                    <div class="col-4 followers">
+                                    <div class="col-4 likes">
                                         <i class="fas fa-plus"></i>
                                         <h6>588</h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="girl-img">
-                                <img class="cover"src="./images/girls/5.jpg" alt="">
+                                <img class="cover" src="./images/girls/5.jpg" alt="">
                             </div>
                         </div>
                         <div class="girl-info">
@@ -153,7 +154,7 @@
                                         <i class="far fa-clock"></i>
                                         <h6>07/05/12</h6>
                                     </div>
-                                    <div class="col-4 followers">
+                                    <div class="col-4 likes">
                                         <i class="fas fa-plus"></i>
                                         <h6>588</h6>
                                     </div>
@@ -193,7 +194,7 @@
                                         <i class="far fa-clock"></i>
                                         <h6>07/05/12</h6>
                                     </div>
-                                    <div class="col-4 followers">
+                                    <div class="col-4 likes">
                                         <i class="fas fa-plus"></i>
                                         <h6>588</h6>
                                     </div>
@@ -236,7 +237,7 @@
                                         <i class="far fa-clock"></i>
                                         <h6>07/05/12</h6>
                                     </div>
-                                    <div class="col-4 followers">
+                                    <div class="col-4 likes">
                                         <i class="fas fa-plus"></i>
                                         <h6>588</h6>
                                     </div>
@@ -276,7 +277,7 @@
                                         <i class="far fa-clock"></i>
                                         <h6>07/05/12</h6>
                                     </div>
-                                    <div class="col-4 followers">
+                                    <div class="col-4 likes">
                                         <i class="fas fa-plus"></i>
                                         <h6>588</h6>
                                     </div>
@@ -319,7 +320,7 @@
                                         <i class="far fa-clock"></i>
                                         <h6>07/05/12</h6>
                                     </div>
-                                    <div class="col-4 followers">
+                                    <div class="col-4 likes">
                                         <i class="fas fa-plus"></i>
                                         <h6>588</h6>
                                     </div>
@@ -359,7 +360,7 @@
                                         <i class="far fa-clock"></i>
                                         <h6>07/05/12</h6>
                                     </div>
-                                    <div class="col-4 followers">
+                                    <div class="col-4 likes">
                                         <i class="fas fa-plus"></i>
                                         <h6>588</h6>
                                     </div>
@@ -386,6 +387,18 @@
             </div>
         </div>
         
+    </section>
+
+    <section class="info-modal">
+        <!-- The modal -->
+        <div id="modal-1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text...</p>
+            </div>
+        </div>
     </section>
 
     <section class="side-floating-buttons">
